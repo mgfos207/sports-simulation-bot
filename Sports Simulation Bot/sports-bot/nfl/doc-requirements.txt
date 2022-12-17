@@ -1,0 +1,39 @@
+Questions:
+- Data Sources for the various leagues (football focus; foo)
+- Model Storage - (AWS s3 storage)
+
+Overall simulation:
+    - Simulating team scores?
+        - Team scores (over/under)
+        - Chiefs 24 Lions 7
+
+Next Phase:
+- Persisting predictions
+
+Consensus Algorithm:
+- Vote feature for the model predictions
+
+- Data should be grouped by current date and older for the season (i.e. 2020-12-05 should group to 2020-01-01)
+  This will be useful to keep track of rank changes throughout the season (a metric to track team momemntum)
+Team Data:
+    Features:
+        Temperature
+        Wind Speed
+    Derived Features:
+        defense rank
+        offense rank
+        team momentum (avg past 3 games)
+        avg points -
+            defense rank
+                (home and away)
+            weather
+                (home and away)
+            roof and surface
+                (home and away)
+        points allowed - 
+            opponent offense rank
+                (home and away)
+            weather
+                (home and away)
+            roof and surface
+                (home and away)
